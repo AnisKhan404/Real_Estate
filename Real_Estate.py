@@ -33,8 +33,8 @@ with st.form("prediction_form"):
     house_age = st.number_input("House Age (in years)", min_value=0.0, max_value=100.0, step=0.5)
     distance = st.number_input("Distance to Nearest MRT Station (in meters)", min_value=50.0, step=10.0)
     convenience_stores = st.number_input("Number of Convenience Stores", min_value=0, step=1)
-    latitude = st.number_input("Latitude", min_value=24.9673, format="%.6f")
-    longitude = st.number_input("Longitude", min_value=121.5149, format="%.6f")
+    latitude = st.number_input("Latitude", value=24.9673, format="%.6f")
+    longitude = st.number_input("Longitude", value=121.5149, format="%.6f")
     
     submitted = st.form_submit_button("Predict Price")
 
