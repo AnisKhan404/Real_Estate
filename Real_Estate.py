@@ -7,12 +7,12 @@ from sklearn.preprocessing import StandardScaler
 import streamlit.components.v1 as components
 
 # Set page config
-st.set_page_config(page_title="Taiwan Real Estate Price Prediction", layout="centered")
+st.set_page_config(page_title="Real Estate Price Prediction", layout="centered")
 st.title("🏠  Real Estate Price Prediction")
 
 # Load CSV data
 df = pd.read_csv("Cleaned_Real_Estate.csv")
-st.header("🏠 Taiwan Real Estate Data")
+st.header("🏠 Real Estate Data")
 st.dataframe(df)
 
 # Show map
