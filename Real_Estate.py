@@ -24,7 +24,7 @@ components.html(map_html, height=500, scrolling=True)
 # Load trained model and scaler
 with open("Real_Estate.pkl", "rb") as f:
     model = pickle.load(f)
-    scaler = joblib.load("scaler.pkl")  
+    scaler = joblib.load("Scaler.pkl")  
 
 # Input form for prediction
 st.header("📊 Predict Property Price")
